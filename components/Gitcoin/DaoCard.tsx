@@ -29,6 +29,7 @@ const ContentBelowThreshold: React.FC<JoinTheDaoProps> = ({ score }) => {
     }
     return (
         <>
+            <p>Your Passport Score must be greater than 10</p>
             <p>Unfortunately, you do not meet the eligibility criteria.</p>
             <p> {text} </p>
             
