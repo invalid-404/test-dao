@@ -4,6 +4,7 @@ import { ChainId } from "@biconomy/core-types";
 import SmartAccount from "@biconomy/smart-account";
 import { ethers } from "ethers";
 import { css } from "@emotion/css";
+import Passport from "../components/Gitcoin/Auth"
 
 export const Auth = () => {
   const [smartAccount, setSmartAccount] = useState<SmartAccount | null>(null);
@@ -97,6 +98,7 @@ export const Auth = () => {
           <button className={buttonStyle} onClick={logout}>
             Logout
           </button>
+          <Passport />
         </div>
       )}
     </div>
@@ -113,8 +115,8 @@ const buttonStyle = css`
   border: none;
   cursor: pointer;
   border-radius: 999px;
-  outline: none;
-  margin-top: 20px;
+  outline: 1px solid #fff;
+  margin: 2rem 0rem 2rem 0 ;
   transition: all 0.25s;
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
